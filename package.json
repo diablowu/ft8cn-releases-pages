@@ -1,0 +1,15 @@
+{
+  "name": "ft8cn-releases-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "ejs": "^3.1.8"
+  },
+  "scripts": {
+    "start": "browser-sync . -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

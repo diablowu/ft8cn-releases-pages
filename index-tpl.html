@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>FT8CN | 发布历史</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="./main.css?<%= ts %>" rel="stylesheet">
+    <script src="./main.js?<%= ts %>"></script>
+</head>
+
+<body>
+    <div id="weixin-tip">
+        <p><img id="weixin-tip-bg" src="./live_weixin.png" alt="微信打开"/><span id="close" title="关闭" class="glyphicon glyphicon-remove"></span></p>
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>FT8CN 发布历史</h1>
+                </div>
+            </div>
+        </div>
+
+        <row class="div">
+            <div class="col-md-12">
+                <% versions.forEach(function(version){ %>
+                    <section class="changelog">
+                        <span class="label label-success">版本号: <%= version.number %></span>
+                        <span class="label label-primary"><%= version.date %></span>
+                        <blockquote>
+                            <p><%= change.comments %></p>
+                          </blockquote>
+                        <p class="text-muted"> </p>
+                        <article>                        
+                            <ol>
+                                <% version.changes.forEach(function(change){
+                                    <li>change</li>
+                                <% }); %>
+                            </ol>
+                        </article>
+                        <footer>
+                            <a class="text-primary download-link" href="javascript:void(0);" data-href="https://sourceforge.net/projects/ft8cn-releases/files/FT8CN_<%= version.fileName %>_<%= version.date %>.apk/download">FT8CN_<%= version.fileName %>_<%= version.date %>.apk</a>
+                        </footer>
+                    </section>
+                <% }); %>
+                
+            </div>
+        </row>
+    </div>
+
+    <!-- generated at <%= generatedAt %> -->
+</body>
+
+</html>

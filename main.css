@@ -1,0 +1,42 @@
+#weixin-tip {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#weixin-tip p {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0;
+    position: relative;
+}
+
+#close {
+    color: #fff;
+    padding: 5px;
+    font-size: 2em;
+    text-shadow: 0 1px 0 #ddd;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+
+section.changelog {
+    margin-bottom: 2em;
+}
+
+section.changelog blockquote p {
+    font-size: 0.5em;
+}
+
+section.changelog blockquote {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

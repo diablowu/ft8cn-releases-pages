@@ -1,0 +1,32 @@
+sf:
+  creds:
+    user: wubo19842008
+    passwd: 
+  path: 
+    files: /home/pfs/project/ft8cn-releases
+    htdocs: /home/project-web/ft8cn-releases/htdocs
+versions:
+- version: 0.50
+  release-date: 2022-07-10
+  comments: 此版本属重大更新。完善了自动程序，增加日志查询，导出功能。到此，基本完成一个可以具备通联能力的APP
+  changes:
+  - 修复瀑布图文字重叠问题
+  - 增加电台支持，以及波特率
+  - 修复当没有定位权限，启动崩溃问题
+  - 增加DTR支持
+  - 修复一些随时发现的小错误
+  - 增加自动发射的监管
+  - 增加自动关注CQ开关
+  - 增加自动呼叫关注的呼号开关
+  - 增加对消息偏移时间过长做标注
+- version: 0.44
+  release-date: 2022-07-02
+  changes:
+  - 增加问题收集反馈的入口
+  - 修正在设置页面会闪退的BUG
+  - 把x5105加到设备列表中
+- version: 0.43
+  release-date: 2022-07-01
+  changes:
+  - 在BG7IKK的帮助下，解决部分电台使用RTS控制PTT的问题
+  - 在频谱的标尺上加了发射频率的红色标记
